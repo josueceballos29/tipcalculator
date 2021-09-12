@@ -1,0 +1,179 @@
+:root {
+	--Very dark cyan: hsl(183, 100%, 15%);
+--Dark grayish cyan: hsl(186, 14%, 43%);
+--Dark grayish cyan: hsl(184, 14%, 56%);
+--Light grayish cyan: hsl(185, 41%, 84%);
+--Light grayish cyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+
+*,::before,::after {
+	box-sizing: border-box;
+}
+
+body {
+	background: hsl(185, 41%, 84%);
+	font-family: monospace;
+}
+
+.main-container {
+	max-width: 70%;
+	height: 400px;
+	background: hsl(0, 0%, 100%);
+	margin: 5em auto;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 15px 50px hsl(185, 41%, 60%);
+}
+
+.contenido {
+	width: 90%;
+	height: 80%;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.c {
+	width: 50%;
+	height: 100%;
+}
+
+.c:first-child {
+	background:hsl(0, 0%, 100%);
+}
+
+.c:last-child {
+	background: hsl(183, 100%, 15%);
+	border-radius: 13px
+}
+
+.options-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+
+.bill, .number-people {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: 23%;
+	position: relative;
+}
+
+
+
+.bill label, .number-people label {
+	font-weight: 700;
+	color: hsl(183, 100%, 15%);
+	margin-top: 10px
+}
+
+.bill input, .number-people input {
+	width: 100%;
+	height: 40px;
+	border: none;
+	outline: none;
+	background: hsl(189, 41%, 97%);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 24px;
+	text-align: right;
+	padding: 0 10px;
+	font-weight: 700;
+	color: hsl(183, 100%, 15%);
+}
+
+.select-tip {
+	width: 90%;
+	height: 30%;
+	display: grid;
+	grid-template-columns: 31.5% 31.5% 31.5%;
+	grid-template-rows: 45% 45%;
+	grid-gap: 10px;
+	justify-content: center;
+	/*align-items: center;*/
+}
+
+.select-tip button {
+	cursor: pointer;
+	background: hsl(183, 100%, 15%);
+	border-radius: 5px;
+	color: white;
+	font-size: 25px;
+	border: none;
+}
+
+.select-tip button:hover {
+	background: hsl(186, 14%, 43%);
+	transition: background .5s
+}
+
+.select-tip button:last-child {
+	background: hsl(189, 41%, 97%);
+	color: hsl(186, 14%, 43%);
+	font-weight: 700;
+	overflow-y: hidden;
+}
+
+.btn-tip--active {
+	background: hsl(185, 41%, 84%);
+}
+
+.tip-amount {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.tip-amount div:first-child {
+	width: 50%;
+	height: 100%;
+	padding: 0 15px;
+}
+
+.tip-amount p {
+	font-size: 40px;
+	margin: 0;
+	font-weight: 700;
+	color: hsl(172, 67%, 45%);
+}
+
+.tip-amount h3 {
+	color: white;
+}
+
+.tip-amount span {
+	color: hsl(184, 14%, 56%);
+	font-size: 14px
+}
+.result-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.result-container .reset {
+	width: 70%;
+	height: 50px;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	margin: 1em auto;
+	align-self: center;
+	border-radius: 5px;
+	border:none;
+	cursor: pointer;
+	background: hsl(172, 67%, 45%);
+	font-size: 20px;
+	font-weight: 700;
+	color: hsl(183, 100%, 15%);
+}
